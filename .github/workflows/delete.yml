@@ -11,9 +11,10 @@ jobs:
         uses: actions/delete-package-versions@v3
         with: 
             owner: namrata-org-1
-            repo: migrating-pkg-public
-            package-name: migrating-pkg-public-1
+            repo: new-pkg-public
+            package-name: new-pkg-public-with-repo
             num-old-versions-to-delete: 1
+            token: ${{ secrets.READ_WRITE_PACKAGES_TOKEN }}
             
 
  
