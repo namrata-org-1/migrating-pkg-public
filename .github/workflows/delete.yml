@@ -14,7 +14,6 @@ jobs:
             repo: migrating-pkg-public
             package-name: migrating-pkg-public-1
             num-old-versions-to-delete: 1
-            token: ${{ secrets.READ_WRITE_PACKAGES_TOKEN }}
             
 
  
