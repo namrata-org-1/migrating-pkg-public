@@ -1,0 +1,22 @@
+name: delete-old-packages
+on:
+  workflow_dispatch:
+
+jobs:
+  delete-old-packages:
+    runs-on: ubuntu-latest
+      
+    steps:
+      - name: Delete package
+        uses: actions/delete-package-versions@v3
+        with: 
+            owner: namrata-org-1
+            repo: migrating-pkg-public
+            package-names: migrating-pkg-public-1
+            num-old-versions-to-delete: 1
+            
+
+ 
+
+
+          
